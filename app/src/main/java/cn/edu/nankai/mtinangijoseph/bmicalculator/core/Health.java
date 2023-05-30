@@ -10,7 +10,7 @@ public class Health {
 
     public double calculateBmi(double heightCm, double weightkg) {
         double bmiIndex = -1;
-        if (heightCm < 0 || weightkg < 0) {
+        if (heightCm <= 0 || weightkg <= 0) {
             errorMessage = "Height and weight can't be zero or less";
         } else {
             bmiIndex = weightkg / ((heightCm / 100) * (heightCm / 100));
